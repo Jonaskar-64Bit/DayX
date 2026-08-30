@@ -12,7 +12,22 @@
     </header>
 
     <main>
-
+        <button id="openCounterCreationPortalBtn">Counter anlegen</button>
+        <div id="createCounterPortal">
+            <form action="post">
+                <label for="counterName">Name:
+                    <input id="counterName" type="text" placeholder="Bitte gebe den Namen deines Counters ein...">
+                </label>
+                
+                <label for="startDate">Startdatum:
+                    <input type="date" name="startDate" id="startDate" placeholder="Bitte gebe das Startdatum deines Counters ein...">
+                </label>
+                <label for="notes">Notizen
+                    <textarea name="notes" id="notes"></textarea>
+                </label>
+                <button id="createCounterBtn">Counter anlegen</button>
+            </form>
+        </div>
     </main>
 
     <footer>
