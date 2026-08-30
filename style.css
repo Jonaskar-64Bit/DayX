@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(1, 1, 53);
+    color: rgb(245, 245, 255);
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+header {
+    background-color: rgb(8, 8, 75);
+}
+
+header p {
+    color: rgb(175, 180, 210);
+}
+
+.counter {
+    background-color: rgb(12, 12, 90);
+    border-radius: 25px;
+    width: 320px;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#counters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+}
+footer {
+    background-color: rgb(5, 5, 65);
+}
