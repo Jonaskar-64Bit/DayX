@@ -10,6 +10,23 @@ counterForm.addEventListener("submit", function (event) {
     const startDate = document.getElementById("startDate").value;
     const notes = document.getElementById("notes").value;
 
+    // Counter Daten speichern
+    const counterData = {
+        name: name,
+        startDate: startDate,
+        notes: notes
+    };
+
+    const savedCounters =
+        JSON.parse(localStorage.getItem("counters")) || [];
+
+    savedCounters.push(counterData);
+
+    localStorage.setItem(
+        "counters",
+        JSON.stringify(savedCounters)
+    );
+
     // Counter erstellen
     const counter = document.createElement("div");
     counter.classList.add("counter");
@@ -42,8 +59,30 @@ function updateCounter(counter, startDate) {
     const difference = today - start;
 
     const days = Math.floor(
-        difference / (1000 * 60 * 60* 24)
-    ) +1;
+        difference / (1000 * 60 * 60 * 24)
+    ) + 1;
 
     counter.querySelector(".counterDay").textContent = `Tag ${days}`;
 }
+
+
+// Gespeicherte Counter laden
+const savedCounters =
+    JSON.parse(localStorage.getItem("counters")) || [];
+
+savedCounters.forEach(function (counterData) {
+
+    const counter = document.createElement("div");
+    counter.classList.add("counter");
+
+    counter.innerHTML = `
+    <h2>${counterData.name}</h2>
+    <p class="counterDay"></p>
+    <p>Seit dem ${counterData.startDate}</p>
+    <p>${counterData.notes}</p>
+    `;
+
+    counters.appendChild(counter);
+
+    updateCounter(counter, counterData.startDate);
+});
