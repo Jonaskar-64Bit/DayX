@@ -4,7 +4,7 @@ DayX ist eine einfache und minimalistische Website, mit der du die Anzahl der Ta
 
 Du kannst Counter für verschiedene Aktivitäten, Ziele oder persönliche Vorhaben erstellen. Jeder Counter besitzt einen eigenen Namen, ein Startdatum und optionale Notizen. Der aktuelle Tag wird automatisch anhand des Startdatums berechnet.
 
-DayX wurde entwickelt, um eine einfache Möglichkeit zu bieten, den Fortschritt über einen längeren Zeitraum zu verfolgen – ohne unnötige Funktionen oder komplizierte Einstellungen.
+DayX wurde entwickelt, um eine einfache Möglichkeit zu bieten, den Fortschritt über einen längeren Zeitraum zu verfolgen, ohne unnötige Funktionen oder komplizierte Einstellungen.
 
 ---
 
@@ -15,9 +15,11 @@ DayX wurde entwickelt, um eine einfache Möglichkeit zu bieten, den Fortschritt 
 * Individueller Name für jeden Counter
 * Individuelles Startdatum
 * Optionale Notizen
+* Counter löschen
 * Speicherung der Counter im Local Storage
 * Counter bleiben nach dem Neuladen der Website erhalten
 * Einfaches und minimalistisches Design
+* Hover-Effekte für Buttons
 * Keine Anmeldung erforderlich
 * Keine Datenbank erforderlich
 
@@ -31,6 +33,12 @@ DayX wurde entwickelt, um eine einfache Möglichkeit zu bieten, den Fortschritt 
 4. Füge optional Notizen hinzu.
 5. Klicke auf **„Counter anlegen“**.
 6. DayX berechnet automatisch den aktuellen Tag.
+
+### Counter löschen
+
+Jeder erstellte Counter besitzt einen **Löschen-Button**.
+
+Durch einen Klick auf den Button kann der jeweilige Counter direkt entfernt werden.
 
 ### Beispiel
 
@@ -71,11 +79,13 @@ DayX wurde mit folgenden Technologien entwickelt:
 
 ## Version
 
-Aktuelle Version: **v1.1.0**
+Aktuelle Version: **v1.3.0**
 
-### Version 1.1.0
+### Version 1.3.0
 
-Version 1.1.0 fügt die Speicherung der Counter über Local Storage hinzu. Dadurch bleiben erstellte Counter auch nach dem Neuladen der Website erhalten.
+Version 1.3.0 fügt einen Löschen-Button für Counter hinzu. Dadurch können nicht mehr benötigte Counter direkt von der Website entfernt werden.
+
+Zusätzlich wurden Hover-Effekte für Buttons hinzugefügt, um eine bessere visuelle Rückmeldung bei der Bedienung zu ermöglichen.
 
 ---
 
@@ -96,9 +106,11 @@ DayX was created to provide a simple way to track progress over a longer period 
 * Custom name for each counter
 * Individual start date
 * Optional notes
+* Delete counters
 * Counters are stored using Local Storage
 * Counters remain available after reloading the website
 * Simple and minimalist design
+* Hover effects for buttons
 * No account required
 * No database required
 
@@ -112,6 +124,12 @@ DayX was created to provide a simple way to track progress over a longer period 
 4. Optionally add notes.
 5. Click **"Create Counter"**.
 6. DayX automatically calculates the current day.
+
+### Deleting a Counter
+
+Each created counter has a **Delete button**.
+
+Clicking the button allows you to directly remove the selected counter.
 
 ### Example
 
@@ -152,8 +170,10 @@ DayX was developed using the following technologies:
 
 ## Version
 
-Current version: **v1.1.0**
+Current version: **v1.3.0**
 
-### Version 1.1.0
+### Version 1.3.0
 
-Version 1.1.0 adds Local Storage support for saving counters. This allows created counters to remain available after reloading the website.
+Version 1.3.0 adds a delete button for counters. This allows users to directly remove counters that are no longer needed.
+
+Hover effects have also been added to buttons to provide better visual feedback when interacting with the interface.
