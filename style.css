@@ -90,7 +90,14 @@ button {
     padding: 10px;
     font-weight: bold;
     margin-left: 10px;
-    
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(25, 25, 130);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 /* Counter */
